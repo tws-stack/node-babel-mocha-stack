@@ -95,7 +95,7 @@ describe("Class", () => {
     let spy;
 
     beforeEach(()=>{
-        sandbox = sinon.sandbox.create();
+        sandbox = sinon.createSandbox();
         spy = sandbox.stub(console, 'log');
     });
 
